@@ -13,7 +13,21 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 8,
+      "unique": true
+    },
+    "title": {
+      "type": "string",
+      "maxLength": 8,
+      "unique": true
+    },
+    "newWindow": {
+      "type": "boolean",
+      "required": true
+    },
+    "key": {
+      "type": "richtext"
     }
   }
 }
