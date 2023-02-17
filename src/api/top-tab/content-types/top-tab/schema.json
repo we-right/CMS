@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string",
-      "maxLength": 8,
-      "unique": true
-    },
     "title": {
       "type": "string",
       "maxLength": 8,
@@ -27,7 +22,10 @@
       "required": true
     },
     "key": {
-      "type": "richtext"
+      "type": "string"
+    },
+    "rightTip": {
+      "type": "string"
     }
   }
 }

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "advertises",
+  "info": {
+    "singularName": "advertise",
+    "pluralName": "advertises",
+    "displayName": "advertise"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "newWindow": {
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    }
+  }
+}
