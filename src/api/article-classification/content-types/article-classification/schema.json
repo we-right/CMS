@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article_classifications",
+  "info": {
+    "singularName": "article-classification",
+    "pluralName": "article-classifications",
+    "displayName": "articleClassification",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 8
+    },
+    "key": {
+      "type": "string"
+    },
+    "newWindow": {
+      "type": "boolean"
+    },
+    "article_labels": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article-label.article-label",
+      "mappedBy": "article_classification"
+    },
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article",
+      "mappedBy": "article_classification"
+    }
+  }
+}
