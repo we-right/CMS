@@ -43,6 +43,12 @@
       "relation": "oneToMany",
       "target": "api::article-label.article-label",
       "mappedBy": "article"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "articles"
     }
   }
 }

@@ -24,9 +24,9 @@
     },
     "article_labels": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::article-label.article-label",
-      "mappedBy": "article_classification"
+      "mappedBy": "article_classifications"
     },
     "article": {
       "type": "relation",
