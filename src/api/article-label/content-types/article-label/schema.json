@@ -4,7 +4,8 @@
   "info": {
     "singularName": "article-label",
     "pluralName": "article-labels",
-    "displayName": "articleLabel"
+    "displayName": "articleLabel",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,9 +24,9 @@
       "target": "api::article.article",
       "inversedBy": "article_labels"
     },
-    "article_classifications": {
+    "article_classification": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::article-classification.article-classification",
       "inversedBy": "article_labels"
     }
