@@ -18,17 +18,17 @@
     "key": {
       "type": "string"
     },
-    "article": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::article.article",
-      "inversedBy": "article_labels"
-    },
     "article_classification": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::article-classification.article-classification",
       "inversedBy": "article_labels"
+    },
+    "article": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::article.article",
+      "inversedBy": "articleLabels"
     }
   }
 }

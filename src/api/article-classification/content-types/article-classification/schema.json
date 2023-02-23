@@ -22,17 +22,17 @@
     "newWindow": {
       "type": "boolean"
     },
-    "article": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::article.article",
-      "mappedBy": "article_classification"
-    },
     "article_labels": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::article-label.article-label",
       "mappedBy": "article_classification"
+    },
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article",
+      "mappedBy": "articleClassification"
     }
   }
 }

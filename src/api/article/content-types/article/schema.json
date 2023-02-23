@@ -32,13 +32,13 @@
     "title": {
       "type": "string"
     },
-    "article_classification": {
+    "articleClassification": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::article-classification.article-classification",
       "inversedBy": "article"
     },
-    "article_labels": {
+    "articleLabels": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::article-label.article-label",
